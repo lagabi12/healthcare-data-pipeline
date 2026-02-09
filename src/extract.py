@@ -14,3 +14,12 @@ def extract_data():
 
 if __name__ == "__main__":
     extract_data()
+
+from transform import transform_data
+from load import load_data
+
+if __name__ == "__main__":
+    df = extract_data()
+    df_transformed = transform_data(df)
+    load_data(df_transformed)
+

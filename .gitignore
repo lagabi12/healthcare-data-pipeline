@@ -1,1 +1,4 @@
-data/raw/diabetic_data.csv
+__pycache__/
+data/raw/
+data/processed/
+

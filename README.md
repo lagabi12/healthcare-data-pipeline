@@ -1,24 +1,40 @@
-\# Healthcare Data Pipeline
+\# Healthcare Data ETL Pipeline
 
 
 
-End-to-end ETL pipeline for healthcare-related data using Python and SQL.
+This project implements a basic ETL (Extract, Transform, Load) pipeline in Python
+
+using healthcare data.
 
 
 
-\## Tech stack
-
-\- Python
-
-\- SQL
-
-\- Git
+\## Project structure
 
 
 
-\## Project status
+\- `src/`: ETL source code
 
-In progress
+&nbsp; - `extract.py`: data extraction from CSV
+
+&nbsp; - `transform.py`: data cleaning and anonymization
+
+&nbsp; - `load.py`: save processed data
+
+\- `data/`: raw and processed data folders (ignored in Git)
+
+
+
+\## How to run
+
+
+
+From the `src` directory:
+
+
+
+```bash
+
+python extract.py
 
 
 
