@@ -1,8 +1,5 @@
 \# Healthcare Data ETL Pipeline
-
-
-
-This project implements a basic ETL (Extract, Transform, Load) pipeline in Python
+This project was developed as part of a transition from Biomedical Engineering to Data Engineering, focusing on real-world healthcare data pipelines. It implements a basic ETL (Extract, Transform, Load) pipeline in Python
 
 using healthcare data.
 
