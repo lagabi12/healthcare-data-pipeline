@@ -1,5 +1,12 @@
 import pandas as pd
+import logging
 
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(message)s"
+)
+
+logger = logging.getLogger(__name__)
 def transform_data(df: pd.DataFrame) -> pd.DataFrame:
     # 1. Normalizar nombres de columnas
     df.columns = (
@@ -30,6 +37,6 @@ def transform_data(df: pd.DataFrame) -> pd.DataFrame:
     if "age" in df.columns:
         df["age"] = df["age"].astype(str)
 
-    print("Data transformed successfully")
+    logger.info("Data transformed successfully")
     return df
 

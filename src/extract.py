@@ -1,14 +1,22 @@
 import pandas as pd
 from pathlib import Path
+import logging
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(message)s"
+)
+
+logger = logging.getLogger(__name__)
 
 def extract_data():
     file_path = "C:/Users/gabid/OneDrive/Escritorio/healthcare-data-pipeline/data/raw/diabetic_data.csv"
 
     df = pd.read_csv(file_path)
 
-    print("Data extracted successfully")
-    print("Shape:", df.shape)
-    print("Columns:", list(df.columns))
+    logger.info("Data extracted successfully")
+    logger.info("Shape:", df.shape)
+    logger.info("Columns:", list(df.columns))
 
     return df
 
